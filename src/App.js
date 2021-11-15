@@ -57,13 +57,29 @@ function App() {
         </div>
       </div>
       <div className="bottom">
-        <svg width="100%" height="100%">
+        <svg width="100%" height="100%" style={{ position: "absolute" }}>
           <path
-            d="M3840 0 L2500 200 M2500 200 L2740 400"
+            d="M 3840 0 Q 3100 150 2640 200 M 2640 200 L 2880 400 Z"
             stroke="#303FFF"
             strokeWidth="2"
+            fill="transparent"
+          ></path>
+          <path
+            d="M 2820 400 L 2580 210 M 2580 210 Q 2300 270 2030 250 M 2030 250 A 110 110 0 0 1 1810 250 M 1810 250 Q 1400 250 1260 210 M 1260 210 L 1020 400"
+            stroke="#303FFF"
+            strokeWidth="2"
+            fill="transparent"
           ></path>
         </svg>
+        <div className="bottom_left"></div>
+        <div className="bottom_middle">
+          <div className="powerIcon">
+            <div className="powerIcon_icon"></div>
+            <div>负载功率</div>
+            <div className="powerIcon_desc">Power of Item</div>
+          </div>
+        </div>
+        <div className="bottom_right"></div>
       </div>
     </div>
   );
